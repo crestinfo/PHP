@@ -10,8 +10,6 @@ echo "Page Content<br/><br/>";
 echo $page_content;
 
 
-function do_shortcode($page_content){
-
 	$shortcodes = array('crest_directory','crest_events','crest_news');
 	
 	foreach($shortcodes as $shortcode){
@@ -35,9 +33,5 @@ function do_shortcode($page_content){
 			
 		}
 	}
-}
-
-do_shortcode($page_content);
-//echo "<pre>"; print_r($regex_matches); exit;
 
 ?>
